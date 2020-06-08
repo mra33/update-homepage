@@ -1,0 +1,361 @@
+/***** BASE STYLES *****/
+
+html {
+	font-size: 16px;
+    background-color: black;
+}
+
+body {
+	width: 100%;
+	font-family: 'didot';
+}
+
+.wrapper {
+    width: 100%;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+    font-size: .875em;
+}
+
+a:hover {
+    opacity: .6;
+}
+
+#resume {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+#resIcon {
+    width: 30%;
+    padding: 0 35%;
+}
+
+.left {
+   background-color: aqua;
+    width: 100%;
+    height: auto;
+    display: flex;
+	justify-content: center;
+	align-items: center;
+   flex-direction: column;
+    padding: 30% 0;
+}
+    
+    
+.right {
+    
+    background-color: #00ff00;
+    width: 100%;
+    height: auto;
+    display: flex;
+	justify-content: center;
+	align-items: center;
+   flex-direction: column;
+     padding: 30% 0;
+}
+
+ 
+
+h1 {
+   width: 100%;
+    font-family: 'Mrs Sheppards', cursive;
+    font-size: 80px; 
+	color: black;
+	transform: rotate(-40deg);
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-flow: row wrap;
+}
+
+
+#animation {
+	width: 50px;
+	height: 50px;
+	position: relative;
+}
+
+#bye {
+	position: relative;
+	font-size: 16px;
+	opacity: .6;
+}
+
+#animationHeading {
+	padding-top: 1em;
+	font-family: 'Mrs Sheppards', cursive;
+	font-size: 40px;
+	transform: rotate(-40deg);
+    width: 50%;
+}
+
+#page-title {
+    margin-top: 25%;
+}
+
+p {
+    text-align: center;
+   margin: 0 10%;
+}
+
+ h3  {
+    font-size: 24px;
+	color: #000000;
+	transform: rotate(-40deg);
+    display: flex;
+	justify-content: center;
+     align-content: center;
+	flex-flow: row wrap;
+    text-transform: uppercase;
+     font-family: 'didot';
+     padding-left: 40%; 
+}
+
+#slideshow-heading {
+    padding-bottom: 50px;
+}
+
+#slideshow {
+    width: 100%;
+    }
+
+#slideshow  img{
+       width: 140%;
+    }
+
+button {
+    border-radius: 12px;
+    padding: 18px;
+    font-size: 30px;
+    background-color: magenta;
+    font-family: 'Mrs Sheppards', cursive;
+    margin-top: 2%;
+}
+
+button:hover {
+    background-color: yellow;
+}
+
+#back {
+    border-radius: 4px;
+    font-size: 14px;
+    background-color: magenta;
+    font-family: 'Didot';
+    margin-left: 75%;
+}
+
+#back:hover {
+	background-color: yellow;
+}
+
+ #curvedarrow {
+      position: relative;
+      width: 0;
+      height: 0;
+      border-top: 16px solid transparent;
+      border-right: 16px solid red;
+      transform: rotate(17deg);
+     margin-top:1%;
+    }
+    #curvedarrow:after {
+      content: "";
+      position: absolute;
+      border: 0 solid transparent;
+      border-top: 8px solid red;
+      border-radius: 27px 0 0 0;
+      top: -19px;
+      left: -16px;
+      width: 30px;
+      height: 14px;
+      transform: rotate(45deg);
+    }
+
+
+#pic {
+    border-radius: 20%;
+}
+
+
+#pic,
+p.about {
+	width: 40%;
+	font-size: 12px;
+	margin: 0;
+	padding: 1em 0;
+}
+
+
+
+footer {
+    width: 100%;
+    background-color: #000000;
+   padding: 10% 0;
+}
+
+.footer-content { 
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+    width: 50%;
+    margin: 0 45%;
+}
+
+footer img {
+    width: 17%;
+    padding: 7% 0;
+}
+
+
+
+@media only screen and (min-width: 768px) {
+    p {
+        font-size: 20px;
+        margin: 0 20%;
+    }
+   
+    #page-title {
+    margin-top: 15%;
+        font-size: 120px;
+}
+    
+    h1 {
+        font-size: 100px;
+    }
+    
+    h3 {
+        font-size: 36px;
+    }
+    .footer-content {
+        width: 70%;
+    }
+ footer img {
+    width: 10%;
+    padding: 7% 0;
+}
+    #slideshow img {
+        width: 100%;
+    }
+    
+	#pic,
+	p.about {
+		width: 30%;
+		
+		margin: 0;
+		padding: 1em 0;
+	}
+   
+    #resume {
+        width: 40%;
+    }
+ 
+    .left,
+    .right {
+        padding: 20% 0;
+    }
+    
+
+}
+
+@media only screen and (min-width: 1200px) {
+    body {
+    
+        background-color: black;
+    }
+    
+    .wrapper {
+        display: flex;
+        flex-flow: row wrap;
+        width: 100%;
+        justify-content: center;
+        align-content: center;
+        align-items: stretch;
+    }
+    
+    #resume {
+        width: 40%;
+    }
+    
+   #resIcon {
+      
+        width: 30%;
+        
+    }
+    
+    p {
+        font-size: 24px;
+    }
+    
+    .left,
+    .right {
+        width: 50%;
+   flex-direction: row;
+        flex-wrap: wrap;
+        padding: 10px 0;
+    }
+    
+     #page-title {
+    margin-top: 15%;
+        font-size: 90px;
+}
+    
+    h3 {
+        width: 30%;
+        padding-left: 50%;
+        font-size: 24px;
+    }
+   
+.footer-content {
+        width: 25%;
+    flex-direction: row;
+    flex-flow: nowrap;
+    }
+ footer img {
+    width: 15%;
+    padding:0;
+}
+	
+    footer {
+        padding: 2% 0;
+    }
+    
+    h1 {
+        font-size: 60px;
+    }
+    
+    #slideshow-heading {
+    padding-bottom: 20px;
+}
+    
+    #slideshow {
+        width: 60%;
+    }
+    
+    #curvedarrow {
+        margin-top: none;
+        margin-bottom: 20%;
+        margin-left: 10%;
+    }
+    
+    #pic,
+		p.about  {
+    	width: 20%;
+		margin: 0;
+		padding: 0 1em;
+            font-size: 11px;
+    }
+	
+   
+    #back {
+    margin-left: 85%;
+}
+
+}
+
