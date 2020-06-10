@@ -45,10 +45,10 @@ a:hover {
    flex-direction: column;
     padding: 30% 0;
 }
-    
-    
+
+
 .right {
-    
+
     background-color: #00ff00;
     width: 100%;
     height: auto;
@@ -59,12 +59,12 @@ a:hover {
      padding: 30% 0;
 }
 
- 
+
 
 h1 {
    width: 100%;
     font-family: 'Mrs Sheppards', cursive;
-    font-size: 80px; 
+    font-size: 80px;
 	color: black;
 	transform: rotate(-40deg);
 	text-align: center;
@@ -114,7 +114,7 @@ p {
 	flex-flow: row wrap;
     text-transform: uppercase;
      font-family: 'didot';
-     padding-left: 40%; 
+     padding-left: 40%;
 }
 
 #slideshow-heading {
@@ -126,8 +126,52 @@ p {
     }
 
 #slideshow  img{
-       width: 140%;
+       width: 100%;
     }
+
+.buttons {
+	background-color: red;
+  color: white;
+  padding: 1em;
+  text-decoration: none;
+	margin: 1.5em;
+}
+
+.git {
+	margin: .875em;
+	font-size: .8em;
+	color: #ff3966;
+	font-family: 'Roboto', sans-serif;
+	text-decoration: underline;
+	text-decoration-color: #6507e0;
+}
+
+
+
+#git-links {
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	align-items: center;
+	flex-flow: row wrap;
+	margin-top: 1.1em;
+	background-color: black;
+
+}
+
+#gallery-buttons {
+	margin-top: 1em;
+	display: flex;
+	justify-content: center;
+	flex-flow: row wrap;
+	align-content: center;
+}
+
+#gallery-buttons img {
+	width: 13%;
+	padding: .5em;
+}
+
 
 button {
     border-radius: 12px;
@@ -198,7 +242,7 @@ footer {
    padding: 10% 0;
 }
 
-.footer-content { 
+.footer-content {
     display: flex;
     justify-content: center;
     align-content: center;
@@ -220,16 +264,16 @@ footer img {
         font-size: 20px;
         margin: 0 20%;
     }
-   
+
     #page-title {
     margin-top: 15%;
         font-size: 120px;
 }
-    
+
     h1 {
         font-size: 100px;
     }
-    
+
     h3 {
         font-size: 36px;
     }
@@ -243,33 +287,45 @@ footer img {
     #slideshow img {
         width: 100%;
     }
-    
+
 	#pic,
 	p.about {
 		width: 30%;
-		
+
 		margin: 0;
 		padding: 1em 0;
 	}
-   
+
     #resume {
         width: 40%;
     }
- 
+
     .left,
     .right {
         padding: 20% 0;
     }
-    
+#git-links {
+	width: 100%;
+}
+
+#gallery-buttons img {
+	width: 9%;
+	padding: 1em;
+}
+
+.git {
+	margin: .5em 3em;
+	font-size: 1em;
+}
 
 }
 
 @media only screen and (min-width: 1200px) {
     body {
-    
+
         background-color: black;
     }
-    
+
     .wrapper {
         display: flex;
         flex-flow: row wrap;
@@ -278,21 +334,21 @@ footer img {
         align-content: center;
         align-items: stretch;
     }
-    
+
     #resume {
         width: 40%;
     }
-    
+
    #resIcon {
-      
+
         width: 30%;
-        
+
     }
-    
+
     p {
         font-size: 24px;
     }
-    
+
     .left,
     .right {
         width: 50%;
@@ -300,18 +356,18 @@ footer img {
         flex-wrap: wrap;
         padding: 10px 0;
     }
-    
+
      #page-title {
     margin-top: 15%;
         font-size: 90px;
 }
-    
+
     h3 {
         width: 30%;
         padding-left: 50%;
         font-size: 24px;
     }
-   
+
 .footer-content {
         width: 25%;
     flex-direction: row;
@@ -321,29 +377,29 @@ footer img {
     width: 15%;
     padding:0;
 }
-	
+
     footer {
         padding: 2% 0;
     }
-    
+
     h1 {
         font-size: 60px;
     }
-    
+
     #slideshow-heading {
     padding-bottom: 20px;
 }
-    
+
     #slideshow {
         width: 60%;
     }
-    
+
     #curvedarrow {
         margin-top: none;
         margin-bottom: 20%;
         margin-left: 10%;
     }
-    
+
     #pic,
 		p.about  {
     	width: 20%;
@@ -351,11 +407,25 @@ footer img {
 		padding: 0 1em;
             font-size: 11px;
     }
-	
-   
+
+
     #back {
     margin-left: 85%;
 }
 
+#gallery-buttons img {
+	width: 9%;
+	padding: 0.1em 1em;
 }
 
+.git {
+	margin: 0em 1em;
+	font-size: .8em;
+}
+
+#git-links {
+	width: 60%;
+	margin-right: 5%;
+}
+
+}
