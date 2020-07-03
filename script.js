@@ -1,3 +1,4 @@
+
 $(document).ready(function(){
       $('#slideshow').slick({
    autoplay: true,
@@ -94,4 +95,15 @@ $("#back").click(function () {
     $("#email").fadeIn(500);
     $("#new").css("background-color","#00ff00");
 });
+
+$("#show").hover(function () {
+$("#show").attr("src", "img/mieko2.png");
+setTimeout (function () {
+    $("#show").attr("src", "img/web-profile3.png")
+  }, 3000);
+
+
+});
+
+
 });

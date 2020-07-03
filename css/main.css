@@ -188,18 +188,21 @@ p {
 
 /*****ABOUT STYLES*****/
 
-#pic {
-    border-radius: 20%;
+pic-holder img{
+	width: 30%;
+	margin-left: 36%;
 }
 
 
-#pic,
-p.about {
+
+
+p.about{
 	width: 40%;
 	font-size: 12px;
 	margin: 0;
 	padding: 1em 0;
 }
+
 
 /*****CONTACT STYLES*****/
 
@@ -436,7 +439,12 @@ footer img {
         margin-left: 10%;
     }
 
-    #pic,
+
+pic-holder img{
+	width: 20%;
+	margin-left: 18%;
+}
+
 		p.about  {
     	width: 20%;
 		margin: 0;
